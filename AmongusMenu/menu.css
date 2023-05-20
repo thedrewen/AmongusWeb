@@ -1,0 +1,83 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  
+}
+body{
+    background-color: rgb(229, 0, 0);
+}
+
+.menu{
+    top: 1%;
+    left: 100%;
+    position: fixed;
+    transition: 5s;
+}
+
+.menu1{
+    border: solid black;
+    width: 500px;
+    height: 700px;
+    border-radius: 5%;
+    background-color: rgba(54, 54, 175, 0.75);
+    position: absolute;
+}
+
+div.menu1 img{
+    width: 100%;
+    position: absolute;
+    right: 10%;
+}
+div.menu1 p{
+    position: absolute;
+    top: 80%;
+    left: 30%;
+    color: aliceblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.menu2{
+    width: 35px;
+    height: 190px;
+    border-radius: 1px;
+    border-top: 5px solid white;
+    background-color: rgb(54, 54, 175);
+    position: absolute;
+    right: 5%;
+    top: 90px;
+}
+.menu2 p{
+    transform: rotate(90deg);
+    position: absolute;
+    left: 0%;
+    top: 45%;
+    color: aliceblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.menu:hover{
+    position: absolute;
+    left: 75%;
+    transition: 1s;
+}
+
+.menu2:active{
+     /* Anim */
+     animation-name: menu_bouton;
+     animation-duration: 1s;
+     animation-iteration-count: infinite;
+}
+
+@keyframes menu_bouton{
+    From{
+        border-radius: 1px;
+    }
+    50%{
+        border-radius: 10px;
+    }
+    To{
+        border-radius: 1%;
+    }
+}
